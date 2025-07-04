@@ -1,0 +1,83 @@
+Nom Métrique Prometheus,Type Registre,Adresse,Description
+biogaz_temperature_fermenteur_celsius,R,9,Température fermenteur principal
+biogaz_temperature_post_fermenteur_celsius,R,12,Température post-fermenteur/nachgärer
+biogaz_temperature_hygienisation_celsius,R,13,Température cuve hygiénisation
+biogaz_temperature_chauffage_celsius,R,3,Température circuit chauffage
+biogaz_temperature_chauffage_reserve_celsius,R,15,Température chauffage réserve
+biogaz_temperature_lisier_conteneur_celsius,R,11,Température lisier dans conteneurs
+biogaz_niveau_fermenteur1_bits,R,10,Niveau fermenteur 1 (0-4095 bits)
+biogaz_niveau_post_fermenteur_microamperes,R Float,2,Niveau post-fermenteur en µA
+biogaz_niveau_hygienisation_bits,R,0,Niveau cuve hygiénisation
+biogaz_volume_fermenteur1_m3,R,24,Volume fermenteur 1 en m³
+biogaz_volume_post_fermenteur_m3,R,144,Volume post-fermenteur en m³
+biogaz_volume_hygienisation_dm3,R,89,Volume hygiénisation en dm³
+biogaz_volume_restant_fermenteur1_m3,R,27,Volume restant jusqu'à remplissage F1
+biogaz_volume_restant_post_fermenteur_m3,R,26,Volume restant jusqu'à remplissage PF
+biogaz_pression_stockage_gaz_mbar,R Float,140,Pression réservoir gaz en mbar
+biogaz_poids_balance_kg,R,23,Poids actuel balance apport direct
+biogaz_consigne_portion_apport_kg,R,32,Consigne portion apport direct
+biogaz_puissance_ccf1_echelonnee,R,1113,Puissance échelonnée cogénération 1
+biogaz_puissance_ccf2_echelonnee,R,1003,Puissance échelonnée cogénération 2
+biogaz_seuil_ccf1_marche_mbar,R Float,141,Seuil marche CCF1 en mbar
+biogaz_seuil_ccf2_marche_mbar,R Float,1001,Seuil marche CCF2 en mbar
+biogaz_seuil_ccf_arret_mbar,R Float,142,Seuil arrêt CCF en mbar
+biogaz_etat_brasseur_fermenteur1_superieur,Output,161,État brasseur supérieur fermenteur 1
+biogaz_etat_brasseur_fermenteur1_inferieur,Output,162,État brasseur inférieur fermenteur 1
+biogaz_etat_brasseur_post_fermenteur_superieur,Output,169,État brasseur supérieur post-fermenteur
+biogaz_etat_brasseur_post_fermenteur_inferieur,Output,170,État brasseur inférieur post-fermenteur
+biogaz_etat_brasseur_fosse_preliminaire,Output,144,État brasseur fosse préliminaire
+biogaz_etat_pompe_fosse_preliminaire,Output,146,État pompe fosse préliminaire
+biogaz_etat_melangeur1,Output,147,État mélangeur 1
+biogaz_etat_melangeur2,Output,148,État mélangeur 2
+biogaz_etat_separateur,Output,173,État séparateur
+biogaz_etat_hygienisation_active,Flag,1002,Hygiénisation en cours
+biogaz_etat_mixeur_hygienisation,Output,159,État mixeur hygiénisation
+biogaz_etat_brasseur_hygienisation,Output,163,État brasseur hygiénisation
+biogaz_etat_pompe_transport_hygienisation,Output,153,État pompe transport hygiénisation
+biogaz_etat_pompe_chauffage_hygienisation,Output,194,État pompe chauffage hygiénisation
+biogaz_flotteur_vide_hygienisation,Input,112,Flotteur vide cuve hygiénisation
+biogaz_etat_ccf1_marche,Output,204,État marche cogénération 1
+biogaz_etat_ccf2_marche,Output,152,État marche cogénération 2
+biogaz_retour_fonctionnement_ccf1,Input,118,Retour fonctionnement CCF1
+biogaz_retour_fonctionnement_ccf2,Input,122,Retour fonctionnement CCF2
+biogaz_etat_pompe_chauffage_principal,Output,192,État pompe chauffage principal
+biogaz_etat_pompe_chauffage_fermenteur1,Output,195,État pompe chauffage fermenteur 1
+biogaz_etat_pompe_chauffage_post_fermenteur,Output,196,État pompe chauffage post-fermenteur
+biogaz_etat_vanne_chauffage_ccf1,Output,200,État vanne chauffage CCF1
+biogaz_etat_vanne_chauffage_ccf2,Output,201,État vanne chauffage CCF2
+biogaz_defaut_arret_urgence,Input,125,Défaut arrêt d'urgence installation
+biogaz_defaut_securite_fermenteur1,Input,52,Défaut sécurité fermenteur 1
+biogaz_defaut_securite_post_fermenteur,Input,90,Défaut sécurité post-fermenteur
+biogaz_defaut_ccf1,Input,119,Défaut cogénération 1
+biogaz_defaut_ccf2,Input,123,Défaut cogénération 2
+biogaz_defaut_brasseur_fermenteur_superieur,Input,49,Défaut brasseur fermenteur supérieur
+biogaz_defaut_brasseur_fermenteur_inferieur,Input,51,Défaut brasseur fermenteur inférieur
+biogaz_defaut_pompe_fosse_preliminaire,Input,21,Défaut pompe fosse préliminaire
+biogaz_defaut_separateur,Input,89,Défaut moteur séparateur
+biogaz_defaut_pompe_chauffage_principal,Input,129,Défaut pompe chauffage principal
+biogaz_defaut_pompe_chauffage_hygienisation,Input,133,Défaut pompe chauffage hygiénisation
+biogaz_air_comprime_fermenteur_ok,Input,53,Air comprimé fermenteur OK
+biogaz_air_comprime_post_fermenteur_ok,Input,91,Air comprimé post-fermenteur OK
+biogaz_air_comprime_compresseur_ok,Input,127,Air comprimé compresseur OK
+biogaz_indicateur_vanne_50_ouverte,Input,92,Indicateur vanne 50 ouverte
+biogaz_indicateur_vanne_51_ouverte,Input,94,Indicateur vanne 51 ouverte
+biogaz_indicateur_vanne_52_ouverte,Input,96,Indicateur vanne 52 ouverte
+biogaz_etat_vanne_50,Output,174,Commande vanne 50
+biogaz_etat_vanne_51,Output,175,Commande vanne 51
+biogaz_etat_vanne_52,Output,176,Commande vanne 52
+biogaz_intervalle_brasseur_fermenteur1_min,R,45,Intervalle brasseur fermenteur 1
+biogaz_duree_brasseur_fermenteur1_min,R,35,Durée brasseur fermenteur 1
+biogaz_intervalle_brasseur_post_fermenteur_min,R,49,Intervalle brasseur post-fermenteur
+biogaz_duree_brasseur_post_fermenteur_min,R,48,Durée brasseur post-fermenteur
+biogaz_temps_hygienisation_min,R,2000,Temps total hygiénisation
+biogaz_temperature_commutation_mixeur_celsius,R,2004,Température commutation mixeur
+biogaz_consigne_niveau_epandage_fermenteur1,R,30,Consigne niveau épandage F1
+biogaz_consigne_niveau_alimentation_fermenteur1,R,100,Consigne niveau alimentation F1
+biogaz_niveau_haut_condensats,Input,57,Alerte niveau haut condensats
+biogaz_fuite_conteneur,Input,114,Détection fuite conteneur
+biogaz_reservoir_separateur_vide,Input,113,Réservoir séparateur vide
+biogaz_retour_auto_brasseur_fermenteur1_sup,Input,48,Retour auto brasseur F1 supérieur
+biogaz_retour_auto_brasseur_fermenteur1_inf,Input,50,Retour auto brasseur F1 inférieur
+biogaz_retour_auto_pompe_fosse_preliminaire,Input,20,Retour auto pompe fosse préliminaire
+biogaz_retour_auto_separateur,Input,88,Retour auto séparateur
+biogaz_retour_auto_pompe_chauffage_hygienisation,Input,132,Retour auto pompe chauffage hyg
