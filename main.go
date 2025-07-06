@@ -11,7 +11,7 @@ import (
 
 	"connectrpc.com/connect"
 	"github.com/VictoriaMetrics/metrics"
-	"github.com/clementnuss/saia-pcd-exporter/gen/saia/v1/saiav1connect"
+	"github.com/clementnuss/saia-grpc-service/gen/go/saia/v1/saiav1connect"
 	"github.com/clementnuss/saia-pcd-exporter/internal"
 	"golang.org/x/net/http2"
 )

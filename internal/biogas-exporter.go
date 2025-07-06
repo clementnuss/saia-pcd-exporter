@@ -8,8 +8,8 @@ import (
 
 	"connectrpc.com/connect"
 	"github.com/VictoriaMetrics/metrics"
-	saiav1 "github.com/clementnuss/saia-pcd-exporter/gen/saia/v1"
-	"github.com/clementnuss/saia-pcd-exporter/gen/saia/v1/saiav1connect"
+	saiav1 "github.com/clementnuss/saia-grpc-service/gen/go/saia/v1"
+	"github.com/clementnuss/saia-grpc-service/gen/go/saia/v1/saiav1connect"
 )
 
 type BiogasExporter struct {
@@ -119,7 +119,7 @@ func (e *BiogasExporter) readMetricValue(ctx context.Context, metric Metric) (fl
 		resp, err := e.client.ReadRegister(
 			ctx, connect.NewRequest(&saiav1.ReadRegisterRequest{
 				Address:  metric.Address,
-				DataType: saiav1.RegisterDataType_REGISTER_DATA_TYPE_INT,
+				DataType: &saiav1.ReadRegisterRequest_AsInt{},
 			}))
 		if err != nil {
 			return 0, err
@@ -130,7 +130,7 @@ func (e *BiogasExporter) readMetricValue(ctx context.Context, metric Metric) (fl
 		resp, err := e.client.ReadRegister(
 			ctx, connect.NewRequest(&saiav1.ReadRegisterRequest{
 				Address:  metric.Address,
-				DataType: saiav1.RegisterDataType_REGISTER_DATA_TYPE_FLOAT,
+				DataType: &saiav1.ReadRegisterRequest_AsFloat{},
 			}))
 		if err != nil {
 			return 0, err
